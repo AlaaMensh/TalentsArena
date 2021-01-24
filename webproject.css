@@ -1,0 +1,641 @@
+/* General Sections*/
+
+body,html{
+	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #fff;
+}
+
+.sections{
+	padding: 20px 0;
+}
+/*.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.6);
+}
+*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+
+
+/*////////////////////////////////////////////*/
+
+header{
+	/*border-bottom: 1px solid gray;*/
+	height: auto;
+	padding: 0px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	color: #fff;
+
+}
+
+.sticky{
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+}
+
+.sticky a{
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+
+header nav .nav-List{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+
+}
+header nav .nav-List .list{
+
+	margin-bottom: 0;
+}
+
+header nav .nav-List .list a{
+	
+	margin: 6px 0;
+	display: inline;
+	transition: all 0.3s ease-in-out;
+	color: #fff;
+	text-decoration: none;
+}
+header nav .nav-List .list a:hover{
+	text-decoration: none;
+	color: gray;
+}
+
+/*header nav .nav-List .list a:active{
+	text-decoration: none;
+	color: gray !important;
+}*/
+ .i_icon{
+	position: absolute;
+	right: 10px;
+	top: 17px;
+	cursor: pointer;
+	z-index: 10;
+	display: none;
+	}
+
+.signupfreebtn{
+	padding: 5px 10px;
+	color: #fff;
+	border:1px solid #7cb62f;
+	border-radius: 5%;
+	background-color: #7cb62f;
+
+	}
+	.signupfreebtn:hover{
+	background: none;
+	border:1px solid #7cb62f;
+	color: #fff;
+}
+@media (min-width: 576px){
+
+
+}
+
+@media (max-width: 575px){
+	header .logo{
+		text-align: center;
+	}
+	header nav .nav-List {
+		text-align: center;
+		padding-bottom: 0;
+		display: none;
+
+	}
+	header nav .nav-List .list {
+		
+		padding: 5%;
+		
+
+	}
+	header{
+		
+		color:#fff;
+		padding: 5%;
+	}
+
+	.i_icon{
+		display: block;
+	}
+
+
+	
+}
+.logo_img{
+	width: 44%;
+	display: block
+}
+header ul{
+	margin-top: 26px;
+}
+
+
+/*///////////////////////////////////////////////*/
+
+/* home section */
+
+.home{
+	height: 1100px;
+   background-image: url("images/home/BG-Hero.png");
+   background-size: cover;
+   background-position: center;
+
+   color: #fff;	
+}
+
+.home .home-title{
+	margin-top: 50px;
+	font-size: 45px;
+	color: #fff;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+	line-height: 82px;
+}
+
+.home .home-desc{
+	font-size: 25px;
+	}
+
+.home .home-content{
+width: 40%;
+height: 100%;
+margin-top: 30px;
+margin-left: 75px;
+}
+.signup_button,.Discover_button:hover{
+	background: none;
+	border:1px solid #7cb62f;
+	color: #fff;
+}
+.signup_button:hover{
+	background: #3ce5ea;
+	color: #fff;
+}
+.Discover_button{
+	background: #3ce5ea;
+	color: #fff;
+}
+.button{
+	padding: 8px 45px;
+	text-align: center;
+	font-size: 14px;
+	margin: 20px 0; 
+}
+@media (max-width: 900px){
+	.home .home-content{
+		width: 30%;
+		height: 100%;
+		margin-top: 100px;
+		margin-left: 75px;
+	
+
+
+	}
+}
+
+@media (max-width: 575px){
+.home .home-content{
+		width: 100%;
+       height: 100%;
+margin-top: 100px;
+margin-left: 32px;
+
+
+
+}
+.home .home-content .button{
+	margin: 0;
+	
+}
+
+header{
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+.home{
+	height: 1500px;
+}
+.signup_button,.Descover_button{
+	float: right;
+	margin: 0 auto;
+	display: inline-block;
+
+
+}
+.button{
+	padding: 10px 25px ;
+}
+
+
+}
+
+
+
+/*////////////////////////////////////////////////////*/
+/* the second div */
+
+
+.about .container{
+	height: auto;
+}
+
+.about_title{
+	font-size: 30px;
+}
+.about_desc{
+	font-size: 20px;
+}
+
+
+
+.services .service .service-title{
+	margin-top: 13%;
+
+	padding-bottom: 6%;
+
+	font-size: 18px;
+
+	
+	margin: 1.66%;
+
+}
+.service{
+	padding: 33% 0%;
+	background-color: #f7f7f7;
+	
+
+}
+
+.services .service .service-desc{
+	font-size: 15px;
+	color: #919293;
+	margin: 0px 20px;
+}
+.services .service .img-header{
+	text-align: center;
+}
+
+.about_text{
+	padding: 25px 0;
+}
+
+@media (max-width: 575px) {
+	.service{
+			margin: 3% 2%;
+
+	}
+}
+
+@media (min-width: 576px) and (min-width: 60000px) {
+	.service{
+
+			
+			text-align: center;
+			max-width: 20%;
+
+
+	}
+	.services .service .img-header{
+		width: 10%;
+	}
+}
+
+.join_btn {
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 100px;
+	
+
+}
+.join_btn .button_join-btn{
+	padding: 10px 25px;
+	background-color: #7fe99a;
+	color: #fff;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+
+}
+.join_btn .button_join-btn:hover{
+	background: #fff;
+	color: #3ce5ea;
+	
+	border:1px solid #3ce5ea; 
+	
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/*third Section*/
+
+.icon-content{
+	background-color: #fff;
+	width: 88%;
+	height: auto;
+	padding: 30px 33px;
+	margin: 26px 54px;
+	box-shadow: 5px 10px 8px 10px #f7f7f7;
+
+
+}
+.icon-content img{
+	width: 13%;
+	display: inline-block;
+	
+
+}
+.icon-content p{
+	margin-left: 9px;
+	margin-bottom: 29px;
+	display: inline;
+	font-size: 20px;
+
+}
+.large-text span{
+	color: orange;
+}
+.large-text h1 {
+	padding: 20px;
+line-height: 55px;
+font-size: 50px;
+}
+
+.large-text p{
+
+    font-size: 22px;
+    color: gray;
+    margin-right: 13%;
+    margin-left: 4%;
+}
+
+.large-text .learn-more-btn{
+	padding: 10px 20px;
+	background-color:#fff ;
+	color: #3ce5ea;
+	border:1px solid #1bdcab;
+	margin-left: 4%;
+	border-radius: 4px;
+	transition:  all 0.3s ease-in-out;
+}
+
+.large-text .learn-more-btn:hover{
+	background-color:#1bdcab ;
+	color: #fff;
+
+
+}
+
+.large-text{
+	margin-left: 4%;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*<!--fourth Section-->*/
+
+.fourth_section{
+	background-image: url("file:///C:/Users/Miss.%20ALAA/Desktop/VSCode/images/fourth%20Section/bg@1x.webp");
+	width: 100%;
+	height: auto;
+	padding: 1px 23px;
+
+margin-top: 69px;
+	
+}
+.finding{
+	width: 55%;
+
+	height: 70%;
+
+	text-align: center;
+
+	margin: 10px auto;
+
+	padding: 38px 20px;
+
+
+}
+.finding h1{
+	font-size: 32px;
+
+font-weight: initial;
+}
+.finding p{
+	color: #757d77;
+	font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+/////////////////////////////////////////////*/
+/*
+the hiring section*/
+
+
+.Img_info img{
+	display: inline-block;
+	width: 100%;
+	position: center;
+
+}
+
+.Hiring_info{
+	display: inline-block;
+	float: left;
+
+}
+
+.text_header{
+	text-align: left;
+/*	margin: 30px 0;*/
+	margin-top: 66px;
+}
+
+.text_header .title{
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.text_header .title ,.text_header .desc{
+	text-align: left;
+}
+
+.awesome_info .dotcircle i{
+	
+	width: 100%;
+
+	color: gray;
+}
+
+.awesome_info .dotcircle span{
+	margin-bottom: 38%;
+
+	float: right;
+
+	color: #c8d3dd;
+
+	font-size: 43px;
+}
+
+.dotcircle{
+	margin-left: 49%;
+
+}
+.vl {
+	border: 0.5px solid gray;
+
+	height: 116px;;
+
+	width: 0;
+
+	margin-left: 50%;
+
+	margin-bottom: -3px;
+}
+@media (min-width: 576px) and (min-width: 768px){
+	.about .container {
+		text-align: center;
+	}
+}
+
+/*/////////////////////////////////////////////*/
+/*footer Section*/
+
+.footer{
+	background-color: #303231;
+	width: 100%;
+	height: auto;
+	
+
+}
+.footer .logo span{
+color: #fff;
+}
+.footer .logo img{
+	width: 10%;
+	color: #fff;
+}
+.row .logo p{
+	font-size: 81%;
+
+font-weight: bold;
+
+color: gray;
+
+margin-top: 3%;
+}
+
+.logo{
+margin-top: 5%;
+}
+
+.iconn img{
+	width: 35px;
+
+}
+.facebook{
+	padding: 6px 15px;
+	height: auto;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.apps{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 7%;
+	margin-left: 12%;
+}
+.iconn{
+	margin-left: 20%;
+
+}
+.location{
+	text-align: center;
+	margin: 0 auto;
+}
+.location a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.location-icon{
+	    margin-left: -23%;
+}
+.location .mess_span{
+	margin-left: 5%;
+}
+.mess_icon{
+	
+	margin-top: 2%;
+	margin-left: 27%;
+}
+.location .loc .span{
+	margin-left: 38%;
+}
+.footer{
+	padding: 2% 0;
+}
+@media (max-width: 575px) {
+	.footer{
+			margin: 0 auto;
+			text-align: center;
+			padding: 7% 0;
+
+
+	}
+	.location{
+		text-align: center;
+		margin: 4% auto;
+	}
+	.mess_icon , .location .loc .span{
+		margin: 0;
+
+	}
+	.location-icon{
+		margin-right: 4%;
+	}
+
+
+}
